@@ -1,17 +1,3 @@
-# lookit-stimuli-template
-
-A template repository for Lookit researchers who want to host their stimuli on GitHub.
-
-The instructions below are primarily intended for people with limited experience using GitHub or Git. If you are already comfortable using git via the command line or a desktop client and pushing your changes to GitHub, there is no need to use the GitHub web interface.
-
-## Getting started
-
-1. Log in to GitHub, making an account if you don't already have one.
-
-2. Click the "Fork" button at the top right of this page. This will copy the template stimuli repository to your own account. 
-
-3. Edit the description (which will still be "A template repository for Lookit researchers who want to host their stimuli on GitHub") so it reflects the planned content of your repository.
-
 ## Adding your stimuli
 
 From your own fork, you can add stimuli right in GitHub like this:
@@ -30,21 +16,19 @@ That's most straightforward to do using the command line or a desktop client for
 
 ## Accessing your stimuli and telling Lookit where to find them (or: what do I put for ``baseDir``?)
 
-You have two options:
-
 ### 1. Use the latest version
 
 If you always want to point to the latest version of your stimuli, you can access those at 
  
  `https://raw.githubusercontent.com/YOUR_USERNAME/lookit-stimuli-template/master/DIRECTORY/FILENAME.EXT`
  
- For instance, if your GitHub username is `kimberscott`, and you have a `cats.jpg` file in the `img` directory, you could link to it at 
+ For instance, if your GitHub username is `Isaaq-Khader`, and you have a `purple-condition.mp4` file in the `mp4` directory, you could link to it at 
  
- `https://raw.githubusercontent.com/kimberscott/lookit-stimuli-template/master/img/cats.jpg`
+ `https://raw.githubusercontent.com/Isaaq-Khader/EASTLab-LookIt/master/mp4/purple-condition.mp4`
  
  Most Lookit frames allow you to specify a `baseDir` or base directory for your files, and then only provide filenames instead of full paths. You can learn more about that in the [docs](https://lookit.readthedocs.io/en/develop/researchers-prep-stimuli.html#directory-structure). **In this case, your `baseDir` would be**:
  
- `https://raw.githubusercontent.com/YOUR_USERNAME/lookit-stimuli-template/master/`
+ `https://raw.githubusercontent.com/YOUR_USERNAME/EASTLab-LookIt/master/`
  
  This option has the advantage that if you make slight adjustments to your stimuli, you don't also have to update your study to use the new versions. However, if you delete any files or make other unexpected changes, it may break something in your study.
 
@@ -54,11 +38,11 @@ If you want to point to a specific, fixed version of your stimuli - a 'snapshot 
 
 The URLs for the stimuli as they were at the time of this commit are:
 
-`https://raw.githubusercontent.com/YOUR_USERNAME/lookit-stimuli-template/COMMIT_ID/DIRECTORY/FILENAME.EXT`
+`https://raw.githubusercontent.com/YOUR_USERNAME/EASTLab-LookIt/COMMIT_ID/DIRECTORY/FILENAME.EXT`
 
 And **the `baseDir` to use is:**
 
-`https://raw.githubusercontent.com/YOUR_USERNAME/lookit-stimuli-template/COMMIT_ID/`
+`https://raw.githubusercontent.com/YOUR_USERNAME/EASTLab-LookIt/COMMIT_ID/`
 
 ## Making changes to your stimuli 
 
